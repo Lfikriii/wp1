@@ -1,0 +1,13 @@
+<!--ausath-->
+<html>
+<head>
+<title>Belajar HTML</title>
+</head>
+<body align="center" >
+<b>APLIKASI PMB</b><br>
+<hr width="40%" color="blue" size="3">
+Home | Profil | Galery | Help
+<hr width="60%" color="blue" size="3">
+<img src="gallery20.jpg" width="400px" height="120px">
+</body>
+</html>

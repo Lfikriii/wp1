@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS - PERINTAH HTML DASAR</title>
+</head>
+<body>
+	<h1 align="center">PERINTAH HTML DASAR</h1>
+	<hr><br><br>
+
+<!--heading dan posisi-->
+	<b>PERINTAH 3</b> 
+	<hr>
+	<h1 align="center">Desain WEB 1</h1>
+	<h2 align="right">Desain WEB 2</h2>
+	<h3 align="left">Desain WEB 3</h3>
+	<h4><font color="red">Desain WEB 4</font></h4>
+	<h5>Desain WEB 5</h5>
+	<h6>Desain WEB 5</h6>
+	<br><br>
+
+<!--Format Paragraf-->
+	<b>PERINTAH 4</b> 
+	<hr>
+	<p align="justify">Internet merupakan jaringan global yang menghubungkan suatu network dengan network lainnya di seluruh dunia lebih dari 10<sup>2</sup>, TCP<sub>IP</sub> menjadi protocol penghubung antara jaringan-jaringan yang beragam di seluruh dunia untuk dapat berkomunikasi.</p>
+
+	<p>World Wide Web (WWW)<font face="arial" size="5" color="blue"> merupakan bagian dari internet yang paling cepat berkembang dan paling populer</font></p>
+	<br><br>
+
+<!--Format Text-->
+	<b>PERINTAH 5</b> 
+	<hr>
+	<big>Desain Web 1</big><br>
+	<em>Desain Web 2</em><br>
+	<small>Desain Web 3</small><br>
+	<strong>Desain Web 4</strong><br>
+	Desain<sup>Web 5</sup><br>
+	Desain<sub>Web 6</sub><br>
+	<ins>Desain Web 7</ins><br>
+	<del>Desain Web 8</del>
+	<br><br>
+
+<!--Format Garis-->
+	<b>PERINTAH 6</b> 
+	<hr>
+	<hr align="left" size="6" width="70%" color="blue"><br><br>
+
+<!--Format List-->
+	<b>PERINTAH 7</b>
+	<hr>
+	<ul>
+		<li>baris 1</li>
+		<li>baris 2</li>
+		<li>baris 3</li>
+	</ul>
+
+	<ul type="square">
+		<li>kotak 1</li>
+		<li>kotak 2</li>
+		<li>kotak 3</li>
+	</ul>
+
+	<ol>
+		<li>angka ke 1</li>
+		<li>angka ke 2</li>
+		<li>angka ke 3</li>
+	</ol>
+
+	<ol type="A">
+		<li>huruf ke 1</li>
+		<li>huruf ke 2</li>
+		<li>huruf ke 3</li>
+	</ol>
+
+	<ol type="i">
+		<li>romawi ke 1</li>
+		<li>romawi ke 2</li>
+		<li>romawi ke 3</li>
+	</ol>
+
+	<dl>
+		<dd>posisi 1</dd>
+		<dt>posisi 2</dt>
+	</dl>
+	<br><br>
+
+<!--Menampilkan Gambar-->
+	<b>PERINTAH 8</b>
+	<hr>
+	<img src="foto.jpg" width="150px" height="80px">
+	<center>
+		<img src="foto.jpg" width="150px" height="80px">
+	</center>
+	<p align="right">
+		<img src="foto.jpg" width="150px" height="80px">
+	</p>
+	<br><br>
+
+<!--Menampilkan video-->
+	<b>PERINTAH 9</b>
+	<hr>
+	<video width="320" height="240" controls>
+		<source src="video.mp4" type="video/mp4">
+	</video><br><br>
+
+<!--menampilkan audio-->
+	<b>PERINTAH 10</b>
+	<hr>
+	<audio controls>
+		<source src="notif.mp3" type="audio/mp3">
+	</audio> <br><br>
+
+<!--membuat tabel-->
+	<b>PERINTAH 11</b>
+	<hr>
+	<table border="1" align="center">
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>Nilai</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Muqorobin</td>
+			<td bgcolor="blue">80</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Abdullah</td>
+			<td align="right">60</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td colspan="2">DESAIN WEB</td>
+		</tr>
+		<tr>
+			<td rowspan="2">4</td>
+			<td colspan="2">STMIK</td>
+		</tr>
+		<tr>
+			<td colspan="">SINUS</td>
+		</tr>
+	</table>
+	<br><br>
+
+<!--Format Form-->
+	<b>PERINTAH 12</b>
+	<hr>
+	<form name="daftar" method="post" action="prosses.php">
+		Nama : <input type="text" name="nama"><br>
+		Tanggal Lahir : <input type="date" name="tgl"><br>
+		Jenis Kelamin : 
+		<input type="radio" name="jk">L
+		<input type="radio" name="jk">P<br>
+		Hobi : 
+		<input type="checkbox" name="hobi">Programmer
+		<input type="checkbox" name="hobi">Mendesain Web
+		<input type="checkbox" name="hobi">Penelitian<br>
+		Jurusan : 
+		<select name="jurusan">
+			<option value="TI-S1">TI</option>
+			<option value="SI=S1">SI</option>
+			<option value="TI-D3">D3</option>
+		</select><br>
+		Password : <input type="password" name="pass"><br>
+		Berkas : <input type="file" name="foto"><br>
+		pesan : <br>
+		<textarea rows="3" cols="12"></textarea><br>
+		<input type="submit" name="simpan" value="kirim">
+	</form>
+	<br><br>
+
+<!--Link-->
+	<b>PERINTAH 13</b>
+	<hr>
+	Kirim Email Klik
+	<a href="mailto.cepat12@gmail.com" title="judul link emal">disini</a>
+	<br>
+	Contoh Link Biasa Klik <a href="frame1.html">disini</a>
+	<br>
+	Contoh Link Tanpa Garis Klik
+	<a href="frame2.html" title="Judul link baru" style="color:red; text-decoration:none;">disini</a>
+	<br>
+	contoh link gambar
+	<a href="framemaster.html" title="judul link">
+		<img src="foto.jpg" width="50px" height="30px" align="center">
+	</a>
+	<br><br>
+
+<!--Implementasi table + form-->
+	<b>PERINTAH 14</b>
+	<hr>
+	<center>
+		<h3>LOGIN ADMIN</h3>
+		<form name="login" method="post" action="prosses.php">
+			<table border="0" align="center">
+				<tr>
+					<td>Username</td>
+					<td>:</td>
+					<td>
+						<input type="text" name="nama">
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td>
+						<input type="password" name="pass">
+					</td>
+				</tr>
+				<tr>
+					<td>  </td>
+					<td>  </td>
+					<td>
+						<input type="submit" value="login">
+						<input type="reset" value="hapus">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>
