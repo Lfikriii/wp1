@@ -1,0 +1,52 @@
+table {
+	background-color: white;
+	align-content: center;
+	width: 1200px;
+}
+
+/*nav atas*/
+.nav1 {
+	background-color: #00FFFF;
+	width: 100px;
+}
+
+/*nav samping kanan*/
+.nav2 {
+	background-color: #FAEBD7;
+	padding-left: 30px;
+}
+
+/*nav bawah*/
+.nav3 {
+	color: white;
+}
+
+/*kotak kanan kiri nav atas*/
+.kknav {
+	width: 200px;
+	background-color: #808080;
+}
+
+/*menghilangkan underline link*/
+a {
+	text-decoration: none;
+}
+
+/*tulisan logo dan menu*/
+.lm {
+	background-color: #FFA500;
+	width: 150px;
+	text-align: center;
+}
+
+/*kotak paling besar*/
+.tgh {
+	vertical-align: text-top;
+	background-color: #00FFFF;
+}
+
+/*p bawah*/
+.pf {
+	text-align: right;
+	padding-right: 50px;
+}
