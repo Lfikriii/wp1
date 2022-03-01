@@ -4,6 +4,10 @@ table {
 	width: 1200px;
 }
 
+h2 {
+	font-size: 16px;
+}
+
 /*nav atas*/
 .nav1 {
 	background-color: #00FFFF;
@@ -49,4 +53,15 @@ a {
 .pf {
 	text-align: right;
 	padding-right: 50px;
+}
+
+/*gambar disamping paragraf*/
+.d-flex {
+	display: flex;
+}
+
+/*padding untuk paragraf*/
+.pad {
+	padding-right: 30px;
+	padding-left: 30px;
 }
