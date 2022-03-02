@@ -73,10 +73,18 @@ a {
 
 /*padding untuk paragraf*/
 .pad {
-	padding-right: 30px;
-	padding-left: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
-.raki {
-	text-align: left;
+.img-daftar {
+	height: 97px;
+	width: 177px;
+}
+
+.hr-alur {
+	height: 1px;
+  	width: 80%;
+  	text-align: center;
+  	background-color: blue;
 }
