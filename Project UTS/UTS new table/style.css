@@ -200,8 +200,39 @@ h3 {
 
 
 /* halaman Home */
-.home {
+.home h4 {
+	font-weight: bold;
+	font-size: 17px;
+}
 
+.home hr {
+	height: 3px;
+  	width: 50%;
+  	background-color: blue;
+}
+
+.home p {
+	text-align: left;
+	padding: 0 30px;
+}
+
+.home img {
+	width: 130px;
+}
+
+.home ul {
+	text-align: left;
+	padding: 0 70px;
+}
+
+.info {
+	font-style: italic;
+	text-align: left;
+	padding-left: 40px;
+}
+
+.info a {
+	color: red;
 }
 
 /* halaman Profil */
