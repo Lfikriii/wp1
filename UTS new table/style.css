@@ -1,0 +1,225 @@
+/* MAF */
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* style universal */
+
+body {
+	background-color: green;
+}
+
+th, td {
+	border: 4px solid gray;
+	border-collapse: collapse;
+	border-style: inset;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* header */
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: yellow;
+}
+
+/* logo-menu */
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* selamat datang */
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	color: blue;
+}
+
+.container table {
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	border: 4px solid gray;
+}
+
+
+/* atribut */
+.w15 {
+	width: 15%;
+}
+
+.w8 {
+	width: 8%;
+}
+
+.h18 {
+	height: 18px;
+}
+
+.h40 {
+	height: 40px;
+}
+
+.h90 {
+	height: 90px;
+}
+
+.h45 {
+	height: 45px;
+}
+
+.va-top {
+	vertical-align: text-top;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* rinci */
+
+.footerA {
+	font-size: 17px;
+	color: black;
+}
+
+.footerA a {
+	color: white;
+}
+
+.footerB {
+	font-size: 17px;
+	color: yellow;
+}
+
+.nav-kiri {
+	text-align: left;
+	padding-left: 30px;
+}
+
+.nav-klik {
+	background-color: magenta;
+}
+
+.logo img {
+	width: 160px;
+}
+
+.f-login {
+	padding: 10px;
+}
+
+.foot-cont {
+	font-style: italic;
+	text-align: right;
+	padding-right: 50px;
+}
+
+
+/* bgcolor */
+
+
+.c-blue {
+	background-color: blue;
+}
+
+.c-orange {
+	background-color: orange;
+}
+
+.c-cyan {
+	background-color: cyan;
+}
+
+.c-gray {
+	background-color: gray;
+}
+
+.c-hdew {
+	background-color: honeydew;
+}
+
+
+
+
+
+/* css perhalaman */
+
+
+
+/* halaman Home */
+.home {
+
+}
+
+/* halaman Profil */
+.profil {
+
+}
+
+/* halaman daftar */
+.daftar {
+
+}
+
+/* halaman laporan */
+.laporan {
+
+}
+
+/* halaman pesan */
+.pesan {
+	
+}
