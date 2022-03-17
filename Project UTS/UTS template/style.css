@@ -120,6 +120,10 @@ h3 {
 	height: 45px;
 }
 
+.h160 {
+	height: 160px;
+}
+
 .va-top {
 	vertical-align: text-top;
 }
