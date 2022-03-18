@@ -240,8 +240,9 @@ h3 {
 }
 
 /* halaman Profil */
-.profil {
-
+.profil h4 {
+	font-weight: bold;
+	font-size: 17px;
 }
 
 /* halaman daftar */
