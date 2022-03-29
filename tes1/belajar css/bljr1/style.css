@@ -1,0 +1,27 @@
+body {
+	background-color: darkcyan;
+}
+
+#y1 {
+	color: red;
+	background: lavender;
+	font-size: 40px;
+}
+
+.tia {
+	color: lavender;
+	background: green;
+	font-size: 30px;
+}
+
+p {
+	color: lavender;
+	background: salmon;
+	font-size: 20px;
+}
+
+itb {
+	color: lavender;
+	background-color: maroon;
+	font-size: 10px;
+}
