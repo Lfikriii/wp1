@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Command Mysql</title>
+
+	<style type="text/css">
+		h1 {
+			text-align: center;
+		}
+
+		table {
+			width: 90%;
+		}
+
+		table, tr, td, th {
+			border: 2px solid black;
+			margin: auto;
+			border-spacing: 0;
+			border-collapse: collapse;
+			padding: 4px 0 4px 0;
+		}
+
+		ul, li {
+			list-style: none;
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		h2 {
+			margin: 0;
+			margin-bottom: 5px;
+			padding-left: 60px;
+			font-size: 25px;
+
+		}
+
+		h3 {
+			margin: 0;
+			padding-left: 10px;
+			background-color: yellowgreen;
+		}
+
+		.nav {
+			text-align: center;
+		}
+
+		.navi {
+			display: inline-block;
+		}
+
+		.kolom1 {
+			width: 20px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>PERINTAH PERINTAH MYSQL</h1>
+
+	<div class="nav">
+		<div class="navi">
+			<ul>
+				<li><a href="">login</a></li>
+				<li><a href="">create</a></li>
+				<li><a href="">Menampilkan</a></li>
+				<li><a href="">Alter</a></li>
+				<li><a href="">Insert</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h2>Masuk ke Mysql</h2>
+	<div class="masuk">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Masuk ke directory bin</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>cd C:/xampp/mysql/bin</dd></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td><h3>Mengaktifkan Mysql</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>mysql -u root -p</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<h2>CREATE</h2>
+	<div class="create">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Membuat Database</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>create database {nama_database};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> create database akademik;</dd></td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td><h3>Menggunakan database</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>use {nama_database}</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> use akademik;</dd></td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td><h3>Membuat tabel</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>create table {nama_table} ({colom1 typedata(jumlah)}, {colom2 typedata(jumlah)}, dst..);</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> create table mahasiswa (NIM varchar(12), nama varchar(30));</dd></td>
+			</tr>
+
+			<tr>
+				<th>4</th>
+				<td><h3>Membuat tabel lengkap</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>create table {nama_table} ({colom1 typedata(jumlah) primary key not null}, {colom2 typedata({jumlah}) not null}, dst..);</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> create table mahasiswa (NIM varchar(12) primary key not null, nama varchar(30) not null);</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<h2>MENAMPILKAN</h2>
+	<div class="menampilkan">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Menampilkan list database</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>show databases;</dd></td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td><h3>Menampilkan list tabel</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>show tables;</dd></td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td><h3>Menampilkan deskripsi tabel</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>desc {nama_tabel}</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>Contoh:</b> desc mahasiswa;</dd></td>
+			</tr>
+
+			<tr>
+				<th>4</th>
+				<td><h3>Menampilkan isi tabel</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>select * from {nama_tabel};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>Contoh:</b> select * from mahasiswa;</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<h2>ALTER</h2>
+	<div class="alter">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Menambahkan primary key</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>alter table {nama_tabel} add primary key ({nama_field});<dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> alter table mahasiswa add primary key (NIM);</dd></td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td><h3>Menambah kolom</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>alter table {nama_table} add {nama_field_baru typedata({jumlah})} after {nama_field};   >bisa tanpa after<</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b>alter table mahasiswa add agama varchar(12) after jurusan;</dd></td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td><h3>Merubah nama kolom</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>alter table {nama_table} change {kolom_lama} {kolom_baru} {typedata({jumlah})};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> alter table mahasiswa change nama absen varchar(12);</dd></td>
+			</tr>
+
+			<tr>
+				<th>4</th>
+				<td><h3>Menghapus kolom</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>alter table {nama_table} drop {nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> alter table mahasiswa drop nama;</dd></td>
+			</tr>
+
+			<tr>
+				<th>5</th>
+				<td><h3>Mengganti nama tabel</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>alter table {nama_tabel_lama} rename {nama_tabel_baru};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> alter table mahasiswa rename mahastudent;</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<h2>MEMASUKKAN DATA KEDALAM FIELD</h2>
+	<div class="insert">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Cara pertama</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>insert into {nama_tabel} ({field1}, {field2}, dst) values ('{data1}', '{data2}', dst);</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> insert into mahasiswa (NIM, nama, asal) values ('2021TI044', 'sukma', 'solo');</dd></td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td><h3>Cara kedua</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>insert into {nama_tabel} values ('{data1}', '{data2}', dst);</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> insert into mahasiswa values ('2021TI044', 'sukma', 'solo');</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<h2>INNER</h2>
+	<div class="inner">
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3></h3></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
