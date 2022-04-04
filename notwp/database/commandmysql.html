@@ -65,17 +65,19 @@
 	<div class="nav">
 		<div class="navi">
 			<ul>
-				<li><a href="">login</a></li>
-				<li><a href="">create</a></li>
-				<li><a href="">Menampilkan</a></li>
-				<li><a href="">Alter</a></li>
-				<li><a href="">Insert</a></li>
+				<li><a href="#masuk">login</a></li>
+				<li><a href="#create">create</a></li>
+				<li><a href="#menampilkan">Menampilkan</a></li>
+				<li><a href="#alter">Alter</a></li>
+				<li><a href="#insert">Insert</a></li>
+				<li><a href="#inner">Join</a></li>
+				<li><a href="#view">View</a></li>
 			</ul>
 		</div>
 	</div>
 
+	<div id="masuk">
 	<h2>Masuk ke Mysql</h2>
-	<div class="masuk">
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
@@ -97,8 +99,8 @@
 	</div>
 		<br><br><br>
 
+	<div id="create">
 	<h2>CREATE</h2>
-	<div class="create">
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
@@ -155,8 +157,8 @@
 	</div>
 		<br><br><br>
 
+	<div id="menampilkan">
 	<h2>MENAMPILKAN</h2>
-	<div class="menampilkan">
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
@@ -205,8 +207,8 @@
 	</div>
 		<br><br><br>
 
+	<div id="alter">
 	<h2>ALTER</h2>
-	<div class="alter">
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
@@ -227,7 +229,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><dd>alter table {nama_table} add {nama_field_baru typedata({jumlah})} after {nama_field};   >bisa tanpa after<</dd></td>
+				<td><dd>alter table {nama_table} add {nama_field_baru} {typedata}({jumlah}) after {nama_field}; >bisa tanpa after<</dd></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -276,8 +278,8 @@
 	</div>
 		<br><br><br>
 
+	<div id="insert">
 	<h2>MEMASUKKAN DATA KEDALAM FIELD</h2>
-	<div class="insert">
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
@@ -308,12 +310,78 @@
 	</div>
 		<br><br><br>
 
-	<h2>INNER</h2>
-	<div class="inner">
+	<div id="inner">
+	<h2>JOIN</h2>
 		<table>
 			<tr>
 				<th class="kolom1">1</th>
-				<td><h3></h3></td>
+				<td><h3>Inner join</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} inner join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> select karyawan.nama, bpjs.no_bpjs, bpjs.kelas from karyawan inner join bpjs on karyawan.nik=bpjs.nik;</dd></td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td><h3>Left outer</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} left outer join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> select karyawan.nama, bank.nama_bank, bank.cabang from karyawan left outer join bank on karyawan.nik = bank.nik</dd></td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td><h3>Right outer</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} right outer join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> select karyawan.nama, bank.nama_bank, bank.cabang from karyawan left outer join bank on karyawan.nik = bank.nik</dd></td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td><h3>Multiple join table</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} join {tabel2} join {tabel3} where {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom} and {tabel1}.{nama_kolom} = {tabel3}.{nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> select karyawan.nik, karyawan.nama, bank.nama_bank, bpjs.no_bpjs, bpjs.kelas from karyawan join bank join bpjs where karyawan.nik = bank.nik and karyawan.nik = bpjs.nik;</dd></td>
+			</tr>
+		</table>
+	</div>
+		<br><br><br>
+
+	<div id="view">
+		<h2>VIEW</h2>
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Membuat view</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>create view {nama_view} as select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} inner join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh:</b> create view contoh1 as select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} inner join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
 			</tr>
 		</table>
 	</div>
