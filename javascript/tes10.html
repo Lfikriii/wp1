@@ -1,0 +1,79 @@
+<html>
+<head>
+	
+</head>
+	<body>
+
+		<script language="javascript">
+			
+			function tambah()
+			{
+				a = eval (form.a.value)
+				b = eval (form.b.value)
+				c = a + b 
+				form.hasil.value = c
+			}
+
+			function kurang()
+			{
+				a = eval (form.a.value)
+				b = eval (form.b.value)
+				c = a - b 
+				form.hasil.value = c
+			}
+
+			function kali()
+			{
+				a = eval (form.a.value)
+				b = eval (form.b.value)
+				c = a * b 
+				form.hasil.value = c
+			}
+
+			function bagi()
+			{
+				a = eval (form.a.value)
+				b = eval (form.b.value)
+				c = a / b 
+				form.hasil.value = c
+			}
+		</script>
+
+		<form name="form">
+			<table>
+				<tr>
+					<h4>Aplikasi Kalkulator</h4>
+				</tr>
+
+				<tr>
+					<td>Angka 1</td>
+					<td>=</td>
+					<td width="150"><input type="text" name="a" size="15"> </td>
+				</tr>
+
+				<tr>
+					<td>Angka 2</td>
+					<td>=</td>
+					<td width="150"><input type="text" name="b" size="15"> </td>
+				</tr>
+
+				<tr>
+					<td>hasil</td>
+					<td>=</td>
+					<td width="150"><input type="text" name="hasil" disabled="true" size="15"> </td>
+				</tr>
+
+				<tr>
+					<td colspan="3" align="left">
+						<input type="button" value="+" onclick="tambah()">
+						<input type="button" value="-" onclick="kurang()">
+						<input type="button" value="*" onclick="kali()">
+						<input type="button" value="-:-" onclick="bagi()">
+					</td>
+				</tr>
+				
+			</table>	
+		</form>
+		
+	</body>
+</html>
