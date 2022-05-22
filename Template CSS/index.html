@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Latihan Box model</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-	<div class="top-bar"></div>
+	<div class="top-bar">
+		<div class="nama-web">MyWebsite</div>
+		<div class="sosmed">
+			<ul>
+				<li><a href="http://facebook.com" target="_blank"><img src="lfb.png" class="fb"></a></li>
+				<li><a href="http://twitter.com" target="_blank"><img src="twt.png" class="twt"></a></li>
+			</ul>
+		</div>
+
+		<div class="searchbar">
+			<form>
+				<input class="search" type="text" placeholder="Cari..." required>
+				<input class="button" type="button" value="Cari">
+			</form>
+		</div>
+	</div>
 
 	<div class="container">
-		<a href="http://twitter.com/Lfikri882" class="twitter" target="_blank">@Lfikri882</a>
 		<div class="header">
 			<h1 class="judul">MyWebsite</h1>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Services</a></li>
+				<li>
+					<div class="dropdown">
+						<span class="nama-dropdown">Products&#9660;</span>
+						<div class="isi-dropdown">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<span class="nama-dropdown">Services&#9660;</span>
+						<div class="isi-dropdown">
+							<a href="#">Services 1</a>
+							<a href="#">Services 2</a>
+							<a href="#">Services 3</a>
+						</div>
+					</div>
+				</li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
