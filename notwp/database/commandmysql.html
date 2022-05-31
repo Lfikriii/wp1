@@ -345,7 +345,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} right outer join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+				<td><dd>select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},[...dst] from {tabel1} right outer join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -353,7 +353,7 @@
 			</tr>
 
 			<tr>
-				<th>3</th>
+				<th>4</th>
 				<td><h3>Multiple join table</h3></td>
 			</tr>
 			<tr>
@@ -381,15 +381,66 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><dd><b>contoh:</b> create view contoh1 as select {tabel}.{nama_kolom}, {tabel}.{nama_kolom},dst from {tabel1} inner join {tabel2} on {tabel1}.{nama_kolom} = {tabel2}.{nama_kolom};</dd></td>
+				<td><dd><b>contoh:</b> create view contoh1 select karyawan.nik, karyawan.nama, bank.nama_bank, bpjs.no_bpjs, bpjs.kelas from karyawan join bank join bpjs where karyawan.nik = bank.nik and karyawan.nik = bpjs.nik;</dd></td>
 			</tr>
 		</table>
-
-		<br><br><br>
-		<img src="update.jpg"> <br>
-		<img src="cupdate.jpg"><br><br>
-		<img src="select.jpg">
-
 	</div>
+	<br><br><br>
+
+	<div class="update">
+		<h2>UPDATE</h2>
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Merubah isi field</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>update {nama_tabel} set {kolom1} = {value1}, {kolom2} = {value2}[...dst] where {kondisi};</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh: </b>update bank nama_bank = BSI where nik = K002</dd></td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br>
+
+	<div class="set-password">
+		<h2>Merubah Password</h2>
+		<table>
+			<tr>
+				<th class="kolom1">1</th>
+				<td><h3>Merubah Password User</h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd>set password for {nama_user}@localhost = password('{isi_password}')</dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh: </b>set password for root@localhost = password('123') &ensp;&ensp;&ensp; >kosongi bagian password jika ingin tidak ada password<</dd></td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br>
+
+	<div class="hak_akses">
+		<table>
+			<tr>
+				<th class="kolom1"></th>
+				<td><h3></h3></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd></dd></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><dd><b>contoh: </b></dd></td>
+			</tr>
+		</table>
+	</div>
+
 </body>
 </html>
