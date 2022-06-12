@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check(browser) 
+		{ 
+			document.forms[0].answer.value=browser 
+		} 
+
+	</script>
+</head>
+<body>
+	<form> 
+		Which browser is your favorite<br> 
+		<input type="radio" name="browser" onclick="check(this.value)" value="Explorer"> 
+		
+		Microsoft Internet Explorer<br> 
+		<input type="radio" name="browser" onclick="check(this.value)" value="Netscape">
+		 
+		Netscape Navigator<br> 
+		<input type="text" name="answer"> 
+	</form> 
+</body>
+</html>

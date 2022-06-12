@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validate() 
+		{ 
+			x=document.myForm 
+			at=x.myEmail.value.indexOf("@") 
+			if (at == -1) 
+			{ 
+				alert("email harus ada @") 
+				return false 
+			} 
+		}
+	</script>
+</head>
+<body>
+
+	<form name="myForm" action="prosesform.htm" onsubmit="return validate()"> 
+		Enter your E-mail address:
+		<input type="text" name="myEmail"> 
+		<input type="submit" value="Send input"> 
+	</form> 
+	<p>This example only tests if the email address contains an "@" character.</p> 
+	<p>Any "real life" code will have to test for punctuations, spaces and other things as well.</p> 
+
+</body>
+</html>

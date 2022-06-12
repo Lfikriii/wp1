@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function cekHp() 
+		{ 
+			var no = " ";
+			no = telp.value;
+			if ((no.length<6) || (no.length>13)) {
+				alert("panjang no telp tidak sesuai")
+			}
+		} 
+	</script>
+</head>
+<body>
+
+	<input type="text" name="telp">
+	<input type="submit" onclick="cekHp" value="kirim">
+
+</body>
+</html>
