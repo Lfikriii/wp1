@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+}
